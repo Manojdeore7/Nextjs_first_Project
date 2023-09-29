@@ -13,10 +13,16 @@ export async function getStaticPaths() {
           meetupid: "2",
         },
       },
+      {
+        params: {
+          meetupid: "3",
+        },
+      },
     ],
   };
 }
 function meetupid(props) {
+  console.log("hi");
   return <DetailedPage meetup={props.meetup} />;
 }
 export async function getStaticProps(context) {
