@@ -13,7 +13,7 @@ function MeetupItem(props) {
           <address>{props.address}</address>
         </div>
         <div className={classes.actions}>
-          <Link href={"/" + props.id}>
+          <Link href={"/" + props._id}>
             <button>Show Details</button>
           </Link>
         </div>

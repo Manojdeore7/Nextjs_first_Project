@@ -21,9 +21,11 @@ function HomePage(props) {
 }
 export async function getStaticProps() {
   //apply for async API
+  let res = await fetch("/api/new-meetup");
+  let data = res.json();
   return {
     props: {
-      meetups: Array,
+      meetups: data,
     },
   };
 }
