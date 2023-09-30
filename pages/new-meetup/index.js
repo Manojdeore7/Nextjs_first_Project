@@ -16,7 +16,6 @@ export default function NewMeetUp() {
       },
     });
     let data = res.json();
-    console.log(data);
   }
   return <NewMeetupForm onAddMeetup={fun} />;
 }
